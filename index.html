@@ -14,7 +14,7 @@
     <header> <!-- navbar-->
         <nav class="navbar">
             <a href="">Home</a>
-            <a href="">about</a>
+            <a href="#About">about</a>
             <a href="">projects</a>
             <a href="">contact</a>
             <!-- <a href="" id="cv">resumè</a> -->
@@ -44,27 +44,65 @@
             <a href="" target="_blank"><img src="figures/LI-In-Bug.png" alt="LinkedIn" ></a>
             <a href="mailto:anaestheramaral@gmail.com"><img src="figures/email.png" alt="email"></a>
         </section>
+        
     </section>
-
+  
+  <!-- about me  --- need to put image -->
     <section class="content" id="aboutMe">
         <h1>About me</h1>
-        <p>
-            Hello, my name is Ana Esther, and I am a Brazilian front-end developer, currently I living in Italy (Trento).<br>
-            I love creating new websites and applications and also learning new languages and skills.<br>
-            Here are few technologies I know how to work on:
-            <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript Vanilla</li>
-            </ul>
-        </p>
+        <div class="content About" id="About">
+            <p>
+                Hello, my name is Ana Esther, and I am a Brazilian front-end developer, currently I living in Italy (Trento).<br>
+                <p>I love creating new websites and applications and also learning new languages and skills.<br>
+                    Here are few technologies I know how to work on:  </p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript Vanilla</li>
+                </ul>
+            </p>
+        </div>
+        
         <div id="myPic">
             <img src="" alt="me" style="width:20%">
         </div>
     </section>
-    <section class="content" id="projects">
+
+    
+    <section class="content Projects" id="Projects">
         <h1>Projects</h1>
         <p>Here are some stuff I have built</p>
+    </section>
+
+    <section class="content Contact" id="Contact">
+        <h1> Contact me</h1>
+        <p>Currently I am looking for new opportunities to work on new projects and have some fun. If you are interested in my job or have any questions, please don’t hesitate to contact me. </p>
+        <section class="social s2">
+            <a href="" target="_blank"><img src="figures/GitHub-Mark-64px.png" alt="gitHub" ></a>
+            <a href="" target="_blank"><img src="figures/LI-In-Bug.png" alt="LinkedIn" ></a>
+            <a href="mailto:anaestheramaral@gmail.com"><img src="figures/email.png" alt="email"></a>
+        </section>
+        <!-- form contact -->
+        <div id="form">
+            <p>Name:</p>
+            <form>
+                <input type="text" class="input name">
+            </form>
+            <p>E-mail:</p>
+            <form>
+                <input type="text" class="input mail">
+            </form>
+            <p>Subject:</p>
+            <form>
+                <input type="text" class="input subject">
+            </form>
+            <p>Message:</p>
+            <form>
+                <textarea name="message" id="messageText" cols="37" rows="10"></textarea>
+                <button type="submit" id="btnSend">Send</button>
+            </form>
+
+        </div>
     </section>
 </main>
 </body>

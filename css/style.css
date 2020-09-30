@@ -123,7 +123,7 @@ main #hello{
 }
 
 .social{
-    padding: 50px;
+    padding-top: 30px;
     margin-left:auto;
     margin-right:auto;
     text-align: center;
@@ -144,40 +144,105 @@ main #hello{
     height: 60px;
 }
 
+main.content{
+    width: 100%;
+}
 .content{
-    width: 100%;
     /* background-color: rgb(255, 208, 0); */
-    width: 100%;
-    padding: 10%; 
+    
+    padding-left: 10%; 
+    padding-right: 10%;
     
 }
 .content p{
+    line-height: 160%;
+}
+#About{
     font-size: 15px;
-    width: 35%;
-    line-height: 150%;
-    /* background-color: #ffd35b; */
-    background-color: #a3a3a370;
+    width: 55%;
+    background-color: #104e50c9;
+    /* background-color: #a3a3a370; */
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
-#aboutMe{
+
+#aboutMe{ 
     display: inline-block;
     position: relative;
     padding-bottom: 0;
-    
 }
-
+/* portrait */
 #myPic{
- 
     border: solid 1px;
     width: 20%;
     position: absolute;
-    left: 50%;
-    top: 30%;
+    left: 60%;
+    top: 40%;
     height: 50%;
 }
 
 h1{
     font-size: 40px;
 }
+
+#Contact p{
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+.s2 img{
+    height: 30px;
+}
+
+.s2 a:hover img{
+    height: 31px;
+}
+
+#form{
+    background-color: teal;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 4%;
+    border-radius: 2%;
+    border: none;
+    
+}
+#form p{
+    color: #ffffff;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 15px;
+}
+#btnSend{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input{
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    border-radius: 20px;
+    height: 1.2rem;
+}
+
+
+textarea{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: max-content;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+
