@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Consolas);
+
+body{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 15px;
+    height: 1.5rem;
+}
+
+nav a{
+    margin-right: 30px;
+}
+
+nav a:hover {
+    color: rgb(221, 0, 0);
+}
+
+nav a:active, a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+}
+
+main #mainPage{
+    position: relative;
+    background-color: #0b1333;
+    text-align: right;
+    height: 450px;
+}
+.myself{
+    padding-right: 100px;
+    padding-top: 100px;
+    display: inline-block;
+   
+}
+
+main #hello{
+    float: left;
+    font-size: 45px;
+    padding-top: 50px;
+    padding-left: 100px;
+    font-weight: 500;
+    
+}
+#hello, #Ana{
+    color: #ffffff;
+}
+
+#nbk{
+    position: absolute;
+    bottom:-4px;
+    left:0px;
+    /* float: left; */   
+}
+
+.grey{
+    color: #959595;
+}
+
+#Iam {
+    font-size: 36px;
+    margin-top: 4rem;
+}
+#mainPage span{
+
+    line-height: 150%
+}
+
+#Ana{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#dev{
+    display:inline-block;
+    font-family: consolas;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+.social{
+    padding: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    height: 60px;
+    position: relative;
+}
+
+.social img{
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social a:hover img
+{
+    height: 60px;
+}
+
+.content{
+    width: 100%;
+    background-color: rgb(255, 208, 0);
+    
+}
+.content p{
+    font-size: 18px;
+    width: 45%;
+    line-height: 150%;
+}
+
+#aboutMe{
+    display: inline-block;
+    position: relative;
+    
+    width: 100%;
+    padding: 10%;  
+}
+
+#myPic{
+ 
+    border: solid 1px;
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    height: 50%;
+}
+
