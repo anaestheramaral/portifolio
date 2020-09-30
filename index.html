@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">    
     <script src="https://kit.fontawesome.com/2319757814.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
 </head>
 
 <body>
@@ -16,20 +17,27 @@
             <a href="">about</a>
             <a href="">projects</a>
             <a href="">contact</a>
-            <a href="">resumè</a>
+            <!-- <a href="" id="cv">resumè</a> -->
+            
         </nav>
+        <form>
+            <button type="button" id="btnCV">Resumè</button>
+        </form>
     </header>
 
 <main>
-    <section> <!-- página inicial de apresentaçao-->
+    <section class="initial"> <!-- página inicial de apresentaçao-->
         <div id="mainPage">
-            <span id=hello>Hello! </span>
-            <div class="myself">
-                <span class="grey" id="Iam">I am<br></span>
-                <span id="Ana">Ana Esther S. Amaral<br></span>
-                <span class="grey" id="dev">And I am a front-end developer.</span>
+            <div class="transBox">
+                <span id=hello>Hello! </span>
+                <div class="myself">
+                    <p  id="Iam">I am</p>
+                    <p id="Ana">Ana Esther S. Amaral</p>
+                    <p  id="dev">And I am a front-end developer.</p>
+                </div>
             </div>
-            <img src="./figures/nbk.png" alt="notebook" style="width: 400px;" id="nbk"> 
+            <!-- <img src="./figures/1727756476-vector (2).png" alt="notebook" style="width: 400px;" id="nbk">  -->
+            <img src="/figures/Rectangle 35.png" alt="none" id="line">
         </div>
         <section class="social">
             <a href="" target="_blank"><img src="figures/GitHub-Mark-64px.png" alt="gitHub" ></a>
@@ -39,7 +47,7 @@
     </section>
 
     <section class="content" id="aboutMe">
-        <h1>About me:</h1>
+        <h1>About me</h1>
         <p>
             Hello, my name is Ana Esther, and I am a Brazilian front-end developer, currently I living in Italy (Trento).<br>
             I love creating new websites and applications and also learning new languages and skills.<br>
@@ -51,12 +59,12 @@
             </ul>
         </p>
         <div id="myPic">
-            <img src="" alt="me" style="with = 20%">
+            <img src="" alt="me" style="width:20%">
         </div>
     </section>
     <section class="content" id="projects">
         <h1>Projects</h1>
-
+        <p>Here are some stuff I have built</p>
     </section>
 </main>
 </body>
