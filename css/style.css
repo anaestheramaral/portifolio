@@ -8,29 +8,28 @@ header{
     background-color: #ffffff;
     text-transform: uppercase;
     text-align: right;
-    font-size: 15px;
-    height: 2rem;
-    padding-right: 110px;
-    
-    
+    font-size: 1.2vw;
+    height: 2em;
+    padding-right:2%;
+    vertical-align: middle;    
 }
-#btnCV{
+
+header button{
     border: none;
     background-color: #ffaa00b9;
     display: inline-block;
     font-family: Poppins;
-    position: absolute;
-    top: 0.3rem;
-    font-size: 18px;
-    border-radius: 3px;
+    font-size: 1.3vw;
+    border-radius: 0.25vw;    
 }
+
 #btnCV:hover{
     background-color: #ffaa00;
 }
 
 nav a{
-    margin-right: 30px;
-    padding: 2px;
+    margin-right: 3%;
+    padding: .5%;
     color: #414141;
 }
 
@@ -44,9 +43,10 @@ nav a:active, a{
 }
 
 .initial{
+    background: no-repeat fixed center;
     background-image: url(/figures/lukas-blazek-GnvurwJsKaY-unsplash.jpg);
     background-size: cover;
-    background-position: center;
+    
 }
 main #mainPage{
     position: relative;
@@ -67,7 +67,7 @@ main #mainPage{
     height: 85%;
 }
 .myself{
-    padding: 50px;
+    padding: 5%;
     display: inline-block;
 }
 main p{
@@ -76,11 +76,11 @@ main p{
 }
 main #hello{
     float: left;
-    font-size: 50px;
-    margin-top: 1%;
-    margin-left:  14%;
+    font-size: 4vw;
+    margin-top: .5%;
+    margin-left:  21%;
     font-weight: 500;
-    color: #000000  ;
+    color: #000000;
     letter-spacing: 0.2rem;
     font-family: consolas;
     font-weight: 700;
@@ -98,23 +98,23 @@ main #hello{
 }
 
 #Iam {
-    font-size: 32px;
+    font-size: 2.5vw;
     margin-top: 3rem;
     color: #000000;
 }
 
 #Ana{
-    font-size: 52px;
+    font-size: 4.2vw;
     font-weight: bolder;
     color: #ffffff;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     padding-bottom: 2rem;
 }
 
 #dev{
     display:inline-block;
     font-family: consolas;
-    font-size: 25px;
+    font-size: 1.7vw;
     color: #ffaa00;
     font-weight: 500;
     padding: 1rem;
@@ -123,49 +123,51 @@ main #hello{
 }
 
 .social{
-    padding-top: 30px;
+    display: block;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin-left:auto;
     margin-right:auto;
     text-align: center;
-    height: 60px;
-    position: relative;
     background-color: #ffffff;
     border: none;
+    width: 100%;
 }
 
 .social img{
-    height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 5%;
+    vertical-align: middle;
 }
 
-.social a:hover img
-{
-    height: 60px;
+/* back color main */
+main, #s2{
+    background-color: #C4C1BA;
 }
-
 main.content{
-    width: 100%;
+    width: 100%;   
 }
-.content{
-    /* background-color: rgb(255, 208, 0); */
-    
+main{
+    padding-bottom: 10%;
+}
+
+.content{    
     padding-left: 10%; 
     padding-right: 10%;
-    
-}
-.content p{
-    line-height: 160%;
-}
-#About{
-    font-size: 15px;
-    width: 55%;
-    background-color: #104e50c9;
-    /* background-color: #a3a3a370; */
-    padding: 2%;
-    border-radius: 10px; 
+    padding-top: 2%;
 }
 
+.content p{
+    line-height: 1.7em;
+}
+#About{
+    font-size: .95rem;
+    width: 60%;
+    /* background-color: #26606B; */
+    /* background-color: #a3a3a370; */
+    padding: 1%;
+}
 
 #aboutMe{ 
     display: inline-block;
@@ -183,33 +185,43 @@ main.content{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 3vw !important;
 }
 
 #Contact p{
     margin-right: 10%;
     margin-left: 10%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 2em;
 }
 
-.s2 img{
-    height: 30px;
+#s2{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    width: 100%;    
 }
+    
 
-.s2 a:hover img{
-    height: 31px;
+#s2 img {
+    width: 3%;
+    margin-right: 2%;
+    margin-left: 2%;
+    vertical-align: middle;
 }
 
 #form{
-    background-color: teal;
+    background-color: #978E80;
     width: 30%;
+    margin-top: 2%;
     margin-right: auto;
     margin-left: auto;
     padding: 4%;
     border-radius: 2%;
-    border: none;
-    
+    border: none;    
 }
+
 #form p{
     color: #ffffff;
     clear: both;
@@ -239,10 +251,29 @@ textarea{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: max-content;
+    width: 90%;
     height: auto;
     border: none;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
+#btnSend{
+    background-color: #C4C4C4;
+    color: #000000;
+    border: none;
+    font-size: 1.5rem;
+    padding: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-radius: .5rem;
+    letter-spacing: .2rem;
+    font-family: consolas;
+    text-transform: uppercase;
+}
+
+#btnSend:hover{
+    border: solid 1px #acacac;
+    text-decoration: underline;
+}
 
