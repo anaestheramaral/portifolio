@@ -1,0 +1,59 @@
+body{
+    background-image: url("../figures/bambu.jpg");
+    background-size: cover;
+}
+header{
+    width: 50%;
+    margin: 0 auto;
+    vertical-align: middle;
+    
+}
+h1{
+    display: inline-block;
+}
+
+.top{
+    float: right;
+    position: relative;
+    right: 0;
+    top: 2vw;
+    width: 70%;
+    text-align: right;
+}
+
+.top a{
+    margin-right: 5%;
+}
+.top a button{
+    padding: .7em 1em;
+    font-size: .8vw;
+    border-radius: 5px;
+    letter-spacing: .1em;
+    border: none;
+    
+}
+.top button:last-child{
+    margin-right: 0;
+}
+
+main,p{
+    margin: 2% auto;
+}
+
+p{
+    text-align: center;
+    /* color: rgba(184, 184, 184, 0.514); */
+}
+
+#white{
+    background-color: #ffffff;
+    height: 2px;
+    width: 50%;
+    border: none;
+}
+.left{
+    width: 50%;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
