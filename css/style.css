@@ -29,25 +29,12 @@ header {
     background-color: #ffaa00b9;
     display: inline-block;
     font-family: Poppins;
-    /* font-size: 1.3vw; */
-    font-size: 15px;
+    font-size: 1.3vw;
     border-radius: 0.25vw;
 }
 
 #btnCV:hover {
     background-color: #ffaa00;
-}
-
-
-@media only screen and (max-width: 600px) {
-    nav {
-        font-size: 14px;
-        height: 30px;
-    }
-
-    .initial {
-        margin-top: 50px;
-    }
 }
 
 nav a {
@@ -73,12 +60,13 @@ a {
     background-size: cover;
 }
 
-main #mainPage {
+#mainPage {
     position: relative;
     /* background-color: #0b1333; */
     text-align: right;
     height: 35vw;
     top: 50%;
+    width: 100%;
 }
 
 .transBox {
@@ -86,8 +74,7 @@ main #mainPage {
     position: absolute;
     top: 15%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     height: 78%;
 }
 
@@ -102,11 +89,17 @@ main p {
     line-height: 50%;
 }
 
-main #hello {
+#hello {
+    /* position: relative;
+    top: 0;
+    left: 0; */
     float: left;
-    font-size: 4vw;
+    font-size: 4.2vw;
     margin-top: .3%;
     margin-left: 25%;
+    /* margin: 4% 0 7% 0; */
+    /* transform: rotate(15deg);
+    -o-transform: rotate(15deg); */
     font-weight: 500;
     color: #000000;
     letter-spacing: 0.2rem;
@@ -149,10 +142,8 @@ main #hello {
 
 .social {
     display: block;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2% 0;
+    margin: 0 auto;
     text-align: center;
     background-color: #ffffff;
     border: none;
@@ -160,8 +151,7 @@ main #hello {
 }
 
 .social img {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 3%;
     width: 5%;
     vertical-align: middle;
 }
@@ -202,20 +192,36 @@ main {
     display: inline-block;
     position: relative;
     padding-bottom: 0;
+    width: 80%;
 }
 
+
 /* portrait */
-#myPic {
-    border: solid 1px;
-    width: 20%;
+#myPic img {
+    border: none;
+    box-shadow: 6px 6px #ffaa00;
+    width: 15%;
     position: absolute;
-    left: 60%;
-    top: 40%;
-    height: 50%;
+    right: 20%;
+    top: 30%;
+    border-radius: 5%;
+    opacity: 60%;
+}
+#myPic img:hover{
+    opacity: 1;
+    transition: .6s;
+    box-shadow: 4px 4px #ffaa00;
+}
+
+#anaphoto {
+    display: none;
 }
 
 h1 {
-    font-size: 3vw !important;
+    font-size: 2vw;
+    color: #ffaa00;
+    background-color: #000000;
+    padding-left: 2%;
 }
 
 #Contact p {
@@ -252,7 +258,7 @@ h1 {
     border: none;
 }
 
-#form p {
+#form label {
     color: #ffffff;
     clear: both;
     margin-top: 10px;
@@ -305,4 +311,113 @@ textarea {
 
 #btnSend:hover {
     color: rgb(110, 110, 110);
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 5vw;
+    }
+
+    nav,
+    #btnCV {
+        font-size: 3vw;
+    }
+
+    #mainPage {
+        margin-top: 7%;
+        height: 120vw;
+    }
+
+    .transBox {
+        height: 80%;
+        top: 10%;
+    }
+
+    #hello {
+        margin: 3% 10%;
+        font-size: 5vw;
+    }
+
+    #Iam {
+        font-size: 3.8vw;
+        font-weight: 600;
+        letter-spacing: .15em;
+        margin-bottom: 15%;
+    }
+
+    #Ana {
+        margin: 10% 0;
+        font-size: 6vw;
+    }
+
+    #dev {
+        position: relative;
+        font-size: 3vw;
+        margin-top: 0;
+    }
+
+    .myself {
+        position: relative;
+        margin: 40% 0;
+    }
+
+    .social img {
+        width: 10%;
+        margin: 0 5%;
+    }
+
+    h1 {
+        font-size: 4.2vw;
+        padding-left: 2%;
+    }
+
+    #About {
+        width: 100%;
+    }
+
+    #myPic img {
+        display: none;
+    }
+
+    #anaphoto {
+        display: inline-block;
+        float: left;
+        padding: 0;
+        width: 37%;
+        border: solid 1px #c7c7c7;
+        border-radius: 7%;
+        margin: 1px;
+        margin-right: 5%;
+        box-shadow: 4px 4px #ffaa00;
+    }
+
+    #Contact p {
+        margin: 0 5%;
+        font-size: .9em;
+        line-height: 1.7em;
+        text-align: center;
+    }
+
+    .underline {
+        text-decoration: underline #ffaa00;
+    }
+
+    .bckg {
+        background-color: #ffaa0056;
+    }
+
+    #form {
+        width: 70%;
+    }
+
+    #s2 img {
+        width: 8%;
+        margin: 5% 4%;
+    }
+    #btnSend{
+        font-size: 1em;
+    }
+    textarea{
+        margin-bottom: 20px;
+    }
 }

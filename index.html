@@ -25,7 +25,8 @@
     <section id="topPage" class="initial"> <!-- página inicial de apresentaçao-->
         <div id="mainPage">
             <div class="transBox">
-                <span id=hello>Hello! </span>
+                <div id="hello">Hello!</div>
+                <!-- <span id=hello>Hello! </span> -->
                 <div class="myself">
                     <p id="Iam">I am</p>
                     <p id="Ana">Ana Esther S. Amaral</p>
@@ -45,10 +46,10 @@
   
   <!-- about me  --- need to put image -->
     <section class="content" id="aboutMe">
-        <h1>About me</h1>
+        <h1 class="h1">About me</h1>
         <div class="content About" id="About">
             <p>
-                Hello, my name is Ana Esther, and I am a Brazilian front-end developer, currently I living in Italy (Trento).<br>
+                <img src="figures/ana.jpeg" alt="me" id="anaphoto"> Hello, my name is Ana Esther, and I am a Brazilian front-end developer, currently I living in Italy (Trento).<br>
                 <p>I love creating new websites and applications and also learning new languages and skills.<br>
                     Here are few technologies I know how to work on:  </p>
                 <ul>
@@ -60,7 +61,7 @@
         </div>
         
         <div id="myPic">
-            <img src="" alt="me" style="width:20%">
+            <img src="figures/ana.jpeg" alt="me">
         </div>
     </section>
 
@@ -73,7 +74,7 @@
     <!-- contact -->
     <section class="content Contact" id="Contact">
         <h1> Contact me</h1>
-        <p>Currently I am looking for new opportunities to work on new projects and have some fun. If you are interested in my job or have any questions, please don’t hesitate to contact me. </p>
+        <p>Currently, I am looking for <span class="underline">new opportunities</span> to work on new projects and <em>have some fun</em>. If you are interested in my job or have any questions, please don’t hesitate to contact me. </p>
         <section id="s2">
             <a href="" target="_blank"><img src="figures/GitHub-Mark-64px.png" alt="gitHub" ></a>
             <a href="" target="_blank"><img src="figures/LI-In-Bug.png" alt="LinkedIn" ></a>
@@ -81,19 +82,19 @@
         </section>
         <!-- form contact -->
         <div id="form">
-            <p>Name:</p>
+            <label>Name:</label>
             <form>
                 <input type="text" class="input name">
             </form>
-            <p>E-mail:</p>
+            <label>E-mail:</label>
             <form>
                 <input type="text" class="input mail">
             </form>
-            <p>Subject:</p>
+            <label>Subject:</label>
             <form>
                 <input type="text" class="input subject">
             </form>
-            <p>Message:</p>
+            <label>Message:</label>
             <form>
                 <textarea name="message" id="messageText" cols="37" rows="10"></textarea>
                 <button type="submit" id="btnSend">Send</button>
